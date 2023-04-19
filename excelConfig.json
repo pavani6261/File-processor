@@ -1,0 +1,137 @@
+{
+    "TestCase_ID":{
+        "type":"Dropdown",
+        "List_values":["WF01_TC01", "WF02_Door_TC01", "WF02_Window_TC02", "WF03_TC01", "WF04_TC01", "WF05_TC01", "WF06_TC01", "WF07_Door_TC01", "WF07_Window_TC02", "WF08_TC01", "WF10_TC01", "WF11_TC01", "WF13_Door_TC01", "WF13_Window_TC02", "WF14_TC01"],
+        "label":"TestCaseID",
+        "isMandatory":"yes",
+        "editable":"true"
+    },
+    "Test_Case_Title":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"TestCaseTitle"
+    },
+    "Execution":{
+        "type":"Dropdown",
+        "List_values":["YES","NO"],
+        "isMandatory":"yes",
+        "editable":"true",
+        "label":"Execution"
+    },
+    "Environment":{
+        "type":"Dropdown",
+        "List_values":["BTST","GRISUP","KLASUP"],
+        "isMandatory":"yes",
+        "editable":"true",
+        "label":"Environment"
+    },
+    "Database":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Database"
+    },
+    "Scenario_ID":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"ScenarioID"
+    },
+    "Databasenumber":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"DataBaseNumber"
+    },
+    "Entity":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Entity"
+    },
+    "Variable 1":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable1"
+    },
+    "Variable 2":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable2"
+    },
+    "Variable 3":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable3"
+    },
+    "Variable 4":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable4"
+    },
+    "Variable 5":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable5"
+    },
+    "Variable 6":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable6"
+    },
+    "Variable 7":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable7"
+    },
+    "Variable 8":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable8"
+    },
+    "Variable 9":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable9"
+    },
+    "Variable 10":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable10"
+    },
+    "Variable 11":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable11"
+    },
+    "Variable 12":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable12"
+    },
+    "Variable 13":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"Variable13"
+    },
+    "Expected_Result":{
+        "type":"Textbox",
+        "isMandatory":"no",
+        "editable":"true",
+        "label":"ExpectedResult"
+    }
+}

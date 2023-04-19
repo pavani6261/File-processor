@@ -1,0 +1,18 @@
+<%- include('./header.ejs') %>
+
+    <div class="container">
+
+        <div class="card mt-5">
+            <h1 class="mt-2 ms-3 fst-italic">File Upload</h1>
+
+            <form class="p-3 mt-3 d-flex flex-row justify-content-between" action='/upload'
+                enctype='multipart/form-data' method="POST" id="form">
+                <input class="form-control" type="file" id="filename" name="filename" value="filename">
+                <button class="btn btn-sm btn-secondary submit-btn" type="submit">Upload</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <%- include('./footer.ejs') %>

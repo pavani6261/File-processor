@@ -1,0 +1,74 @@
+<%- include ('./header.ejs')%>
+    <div>
+
+        <h2 class="fst-italic text-center mt-5">New Record</h2>
+        <div class="card w-50 mx-auto mt-3">
+
+            <form class="form mt-3 p-3" action="/form" method="post">
+                
+                
+<% for(let i in headers) {%>
+    <% if(headers[i].isMandatory=='yes'  ) {%>
+    <label><span style="color: brown;">*</span>
+        <b>
+            <%=  headers[i].label%> :
+        </b>
+    </label>
+    <% if(headers[i].type==='Dropdown' ){ %>
+
+        <select class="form-control mt-2 dropdown-toggle" name="<%= i%>" id="" required>
+
+            <% for(let j=0; j<headers[i].List_values.length; j++){ %>
+                <option value="<%= headers[i].List_values[j] %>"
+                    >
+                    <%= headers[i].List_values[j] %>
+                </option>
+                <% } %>
+        </select>
+
+        <% } %>
+
+            <% if(headers[i].type==='Textbox' ){ %>
+
+                <input class="form-control mt-2" type="text" name="<%= i%>" id="" required>
+
+            <% } %>
+    <% } else {%>
+        <label>
+            <b>
+                <%=  headers[i].label%> :
+            </b>
+        </label>
+        <% if(headers[i].type==='Dropdown' ){ %>
+    
+            <select class="form-control mt-2 dropdown-toggle" name="<%= i%>" id="">
+    
+                <% for(let j=0; j<headers[i].List_values.length; j++){ %>
+                    <option value="<%= headers[i].List_values[j] %>"
+                        >
+                        <%= headers[i].List_values[j] %>
+                    </option>
+                    <% } %>
+            </select>
+    
+            <% } %>
+    
+                <% if(headers[i].type==='Textbox' ){ %>
+    
+                    <input class="form-control mt-2" type="text" name="<%= i%>" id="" >
+    
+                <% } %>
+    <% } %>
+
+<% } %>
+
+
+
+
+                    <button class=" mt-2 btn btn-sm btn-success" type="submit">Save </button>
+                    <a class=" mt-2 btn btn-sm btn-primary" type="button" href="/upload" id="close">Close </a>
+            </form>
+        </div>
+
+    </div>
+
